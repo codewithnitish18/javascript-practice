@@ -53,3 +53,40 @@
   b.x = 2;
   console.log(a);
   console.log(b);
+
+  //object literals 
+
+  const JsUser = {
+    name: "Hitesh",
+    age: 18,
+    location: "Gorakhpur",
+    email: "ritviknitish@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday","Saturday"]
+  }
+console.log(JsUser.email)
+console.log(JsUser["email"])
+
+// JsUser.greeting = function(){
+//   console.log("Hello JS User");
+
+// }
+// console.log(JsUser.greeting);
+
+
+//freeze is used to block the properties that after using this  we canno modify anything what we have freezes
+
+JsUser.email = "ritviknitish@18gmail.com"
+Object.freeze(JsUser)
+JsUser.email = "etheraeal.nitish@gmail.com"
+console.log(JsUser);
+
+JsUser.greeting = function(){
+  console.log("Hello JS user");
+}
+JsUser.greetingTwo = function(){
+  console.log(`Hello JS user, ${this.name}`);
+
+}
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
