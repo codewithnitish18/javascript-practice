@@ -35,3 +35,17 @@ tinderUser.isLoggedIn = false
  console.log(Object.keys(tinderUser));
  console.log(Object.values(tinderUser));
  
+
+  const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "virat"
+
+}
+ 
+// console.log(course.courseInstructor)
+
+const{courseInstructor: instructor} = course
+console.log(instructor);
+
+{2}
