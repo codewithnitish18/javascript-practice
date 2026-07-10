@@ -61,7 +61,7 @@ if (averageRun>=90){
 //it is used to check the multiple conditions based on the value it is given 
 
 
-let day = 90;
+let day = 5;
 
 switch(day){
     case 1:
@@ -86,5 +86,31 @@ switch(day){
         console.log("Sunday");
         break;
     default:
-        console.log("Invalid day");    
+        console.log("Invalid day");   
+
+}
+
+
+
+//we use switch statement when we need to compare thevariabkle againsr a fixed values,it makes the code more cleaner and readable
+//readability and maintainability of the code is improved when we use switch statement instead of if else statement
+
+
+
+let role = "virat";
+switch(role){
+    case "admin":
+        console.log("Full Access");
+        break;
+    case "student":
+        console.log("access to view the student courses");
+        break;
+    case "teacher":
+        console.log("access to view the teacher portal");
+        break;       
+    case "guest":
+        console.log("access to view the guest portal");
+        break;
+    default:
+        console.log("Invalid role")
 }
