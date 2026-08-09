@@ -73,18 +73,48 @@
 // console.log(answer);
 
 
-function checkNumber(num){
-    if(num>0){
-        return "Positive"
-    }else if(num==0){
-        return "whole number"
-    }
-    else{
-        return "Negative"
-    }
+// function checkNumber(num){
+//     if(num>0){
+//         return "Positive"
+//     }else if(num==0){
+//         return "whole number"
+//     }
+//     else{
+//         return "Negative"
+//     }
      
-}
+// }
 
-console.log(checkNumber(24));
-console.log(checkNumber(-66));
-console.log(checkNumber(0));
+// console.log(checkNumber(24));
+// console.log(checkNumber(-66));
+// console.log(checkNumber(0));
+
+//when a return executes the function immediately stops and send the value back to the caller..
+
+// there going a function going to call another function
+
+
+// function isPositive(num){
+//     if(num>0){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+// function checkNumber(num){
+//     if(isPositive(num)){
+//         return "Positiver Number"
+//     }else{
+//        return  "Not Positive"
+//     }
+// }
+
+// console.log(checkNumber(55));
+// console.log(checkNumber(-8));
+
+//TRUTHY 
+//a value is truthy when javascript treats it like true in a condition
+if(1){
+    console.log("yes");
+}
