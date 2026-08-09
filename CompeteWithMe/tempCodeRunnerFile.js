@@ -1,16 +1,11 @@
+function add(a,b){
+//     return a + b;
 
+// }
+// function multiply(x){
+//     return x * 2;
 
-for (let run = 0; run<=40;run++){
-    console.log(run);
-    if(run==18){
-        break;
-    }
-}
+// }
+// let answer = multiply(add(10,20));
 
-
-//continue statement is used to skip the curent iteration of the loop and continue with the next iteration
-
-
-for (let devlopment = 0;devlopment<=40;devlopment++){
-    console.log(devlopment);
-    if(devlopment===35){
+// console.log(answer);
