@@ -89,28 +89,89 @@
 // it is used to create a new array containing only the elements that satisfy a condition
 
 
-let numbers = [10,20,30,45,55,65];
-let evenNumbers = numbers.filter(function(num){
-    return num % 2 === 0;
-});
-console.log(evenNumbers);
+// let numbers = [10,20,30,45,55,65];
+// let evenNumbers = numbers.filter(function(num){
+//     return num % 2 === 0;
+// });
+// console.log(evenNumbers);
 
 
 
-let files = [
-    {
-        name:"college.jpg", type: "image"
-    },
-    {
-        name:"resume.pdf", type:"document"
-    },
-    {
-        name:"trip.jpg", type:"image"
-    }
+// let files = [
+//     {
+//         name:"college.jpg", type: "image"
+//     },
+//     {
+//         name:"resume.pdf", type:"document"
+//     },
+//     {
+//         name:"trip.jpg", type:"image"
+//     }
+// ];
+
+// let images = files.filter(function(file){
+//     return file.type === "image";
+// });
+
+// console.log(images);
+
+
+// let players = [
+//     {name:"Virat", age:37},
+//     {name:"Rohit", age:39},
+//     {name:"AB", age:42},
+//     {name:"Gill", age:26}
+// ];
+// let youngPlayers = players.filter(function(player){
+//     return player.age < 35;
+//         //player.age is used to access the age property in the  current object
+// })
+
+// console.log(youngPlayers);
+
+
+//players
+//    ↓
+// filter()
+//    ↓
+// takes each object → player
+//    ↓
+// player.age
+//    ↓
+// check age < 35
+//    ↓
+// true  → keep object
+// false → discard object
+
+
+//MAP 
+//it is used to extract something from every player
+// filter() → "Which elements should I keep?"
+// map()    → "What should I get/create from each element?"
+
+
+let players = [
+    {name:"Virat", age:37},
+    {name:"Rohit", age:39},
+    {name:"AB", age:42},
+    {name:"Gill", age:26}
 ];
 
-let images = files.filter(function(file){
-    return file.type === "image";
-});
+// let names = players.map(function(player){
+//     return player.name;
+// })
+// console.log(names);
 
-console.log(images);
+// let experiencedPlayers = players.filter(function(player)
+// {
+//     return player.age > 35;
+// });
+
+// console.log(experiencedPlayers);
+
+let ages = players.map(function(player)
+{
+    return player.age;
+
+})
+console.log(ages);
