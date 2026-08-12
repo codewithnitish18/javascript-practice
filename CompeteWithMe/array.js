@@ -56,43 +56,61 @@
 // ];
 // console.log(students);
 
-let files = [
-    {
-        name: "resume.pdf",
-        type: "pdf"
-    },
-    {
-        name:"photo.jpg",
-        type:"Image"
-    },
-    {
-        name:"notes.pdf",
-        type:"pdf"
-    }
-];
-for (let i = 0;i< files.length; i++){
-    console.log(files[i].name);
-}
 
-let players = [
-     {  name: "Virat",
-        age: 37,
-        country:"India"
-    },
-    {
-        name:"Rohit",
-        age: 39,
-        country:"India"
-    },
-    {
-        name:"Ab devilliers",
-        age:42,
-        country: "South africa"
-    }
-
-]
-for (let i = 0; i < players.length; i++){
-    console.log(players[i].name + "-" + players[i].country);
-}
 
 //filtering data
+
+// let files = [
+//     {
+//         name: "college.jpg",
+//         type: "image",
+//         location: "College"
+//     },
+//     {
+//         name: "resume.pdf",
+//         type: "document",
+//         location: "Laptop"
+//     },
+//     {
+//         name: "trip.jpg",
+//         type: "image",
+//         location: "Goa"
+//     }
+// ];
+
+// for( let i = 0; i < files.length; i++){
+//     if (files[i].type === "image"){
+//         console.log(files[i].name);
+//     }
+// }
+
+
+//filter
+// it is used to create a new array containing only the elements that satisfy a condition
+
+
+let numbers = [10,20,30,45,55,65];
+let evenNumbers = numbers.filter(function(num){
+    return num % 2 === 0;
+});
+console.log(evenNumbers);
+
+
+
+let files = [
+    {
+        name:"college.jpg", type: "image"
+    },
+    {
+        name:"resume.pdf", type:"document"
+    },
+    {
+        name:"trip.jpg", type:"image"
+    }
+];
+
+let images = files.filter(function(file){
+    return file.type === "image";
+});
+
+console.log(images);
