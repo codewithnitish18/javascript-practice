@@ -150,12 +150,12 @@
 // map()    → "What should I get/create from each element?"
 
 
-let players = [
-    {name:"Virat", age:37},
-    {name:"Rohit", age:39},
-    {name:"AB", age:42},
-    {name:"Gill", age:26}
-];
+// let players = [
+//     {name:"Virat", age:37},
+//     {name:"Rohit", age:39},
+//     {name:"AB", age:42},
+//     {name:"Gill", age:26}
+// ];
 
 // let names = players.map(function(player){
 //     return player.name;
@@ -169,9 +169,29 @@ let players = [
 
 // console.log(experiencedPlayers);
 
-let ages = players.map(function(player)
-{
-    return player.age;
+// let ages = players.map(function(player)
+// {
+//     return player.age;
 
+// })
+// console.log(ages);
+
+
+let players = [
+    { name:"virat",age:37},
+    {name:"rohit", age:39},
+    {name:"AB", age:42},
+    {name:"Gill", age:26}    
+];
+
+let experiencedPlayer = players.filter(function(player)
+{
+    return player.age > 35;
 })
-console.log(ages);
+.map(function(player)
+{
+    return player.name
+})
+
+  
+console.log(experiencedPlayer);
