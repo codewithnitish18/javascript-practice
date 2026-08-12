@@ -1,16 +1,14 @@
 
-// function checkNumber(num){
-//     if(num>0){
-//         return "Positive"
-//     }else if(num==0){
-//         return "whole number"
-//     }
-//     else{
-//         return "Negative"
-//     }
-     
-// }
+// let players = ["Virat","Rohit","Dhoni","AB","Sachin"];
+//  let SelectedPlayers = players.slice(1,4);
+//  console.log(SelectedPlayers);
+//  console.log(players);
 
-// console.log(checkNumber(24));
-// console.log(checkNumber(-66));
-// console.log(checkNumber(0));
+//   let reservedPlayers = players.splice(1,4);
+//   console.log(players);
+
+// let files = ["resume.pdf", "photo.jpg", "notes.pdf", "project.zip"];
+
+// files.splice(1, 2);
+
+// console.log(files);
