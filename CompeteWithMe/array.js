@@ -4,9 +4,9 @@
 //  console.log(players);
 
 
- //INCLUDES
- //it is used to find the find the element in a array
- //so basically include is usedto check whether the elemnent ias present or exist in the array
+//  INCLUDES
+//  it is used to find the find the element in a array
+//  so basically include is usedto check whether the elemnent ias present or exist in the array
 
 
 //   let files = ["resume.pdf", "photo.jpg", "notes.pdf"];
@@ -16,16 +16,16 @@
 //   console.log(players.includes("Virat"));
 //   console.log(players.includes("Sachin"));
 
-//INDEXOF
-//sometimes we dont want that something exist or not we also want that where it is exist and and where it is so it iis used to tell whher it is
+// INDEXOF
+// sometimes we dont want that something exist or not we also want that where it is exist and and where it is so it iis used to tell whher it is
 
 // let files = ["resume.pdf", "photo.jpg", "notes.pdf", "project.zip"];
 // console.log(files.indexOf("notes.pdf"));
 // console.log(files.indexOf("abc.pdf"));
 // console.log(files.includes("project.zip"));
 
-//SLICE  
-//it is used to take out a portion of an araay without changing the original array
+// SLICE  
+// it is used to take out a portion of an araay without changing the original array
 
 // let players = ["Virat","Rohit","Dhoni","AB","Sachin"];
 //  let SelectedPlayers = players.slice(1,4);
@@ -41,7 +41,7 @@
 
 // console.log(files);
 
-//spice is used to remove gthe selecetd portion and alsio vhanges the original araay
+// spice is used to remove gthe selecetd portion and alsio vhanges the original araay
 
 // //array containing multiple objects
 // let students = [
@@ -58,7 +58,7 @@
 
 
 
-//filtering data
+// filtering data
 
 // let files = [
 //     {
@@ -85,7 +85,7 @@
 // }
 
 
-//filter
+// filter
 // it is used to create a new array containing only the elements that satisfy a condition
 
 
@@ -130,7 +130,7 @@
 // console.log(youngPlayers);
 
 
-//players
+// players
 //    ↓
 // filter()
 //    ↓
@@ -144,8 +144,8 @@
 // false → discard object
 
 
-//MAP 
-//it is used to extract something from every player
+// MAP 
+// it is used to extract something from every player
 // filter() → "Which elements should I keep?"
 // map()    → "What should I get/create from each element?"
 
@@ -196,8 +196,8 @@
   
 // console.log(experiencedPlayer);
 
-//FOR EACH
-//run this function once for every element in the array
+// FOR EACH
+// run this function once for every element in the array
 
 
 // let names = ["Virat","Rohit","AB"];
@@ -211,7 +211,7 @@
 //     console.log("file",index +":" ,file);
 //  });
 
- //a callback is a function that is passed as an arguement to another function and it is executed after some kind of operaton performed
+//  a callback is a function that is passed as an arguement to another function and it is executed after some kind of operaton performed
 
 
 //  function add (a,b){
@@ -235,9 +235,9 @@
 //  });
 //  console.log(squares);
 
-const numbers = [2, 4, 6];
+// const numbers = [2, 4, 6];
 
-const result = numbers.map((num) => {
-   return num * 2;
-});
- console.log(result); 
+// const result = numbers.map((num) => {
+//    return num * 2;
+// });
+//  console.log(result); 
