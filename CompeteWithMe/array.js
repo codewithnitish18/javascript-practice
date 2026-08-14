@@ -177,21 +177,67 @@
 // console.log(ages);
 
 
-let players = [
-    { name:"virat",age:37},
-    {name:"rohit", age:39},
-    {name:"AB", age:42},
-    {name:"Gill", age:26}    
-];
+// let players = [
+//     { name:"virat",age:37},
+//     {name:"rohit", age:39},
+//     {name:"AB", age:42},
+//     {name:"Gill", age:26}    
+// ];
 
-let experiencedPlayer = players.filter(function(player)
-{
-    return player.age > 35;
-})
-.map(function(player)
-{
-    return player.name
-})
+// let experiencedPlayer = players.filter(function(player)
+// {
+//     return player.age > 35;
+// })
+// .map(function(player)
+// {
+//     return player.name
+// })
 
   
-console.log(experiencedPlayer);
+// console.log(experiencedPlayer);
+
+//FOR EACH
+//run this function once for every element in the array
+
+
+// let names = ["Virat","Rohit","AB"];
+//  players.forEach(function(player,index){
+//     console.log(index, player);
+//  });
+
+
+//  let files = ["resume.pdf", "photo.jpg", "notes.pdf"];
+//  files.forEach(function(file,index){
+//     console.log("file",index +":" ,file);
+//  });
+
+ //a callback is a function that is passed as an arguement to another function and it is executed after some kind of operaton performed
+
+
+//  function add (a,b){
+//     return a+b;
+//  }
+ 
+
+//  const add = (a,b) => {
+//     return a+b;
+//  };
+
+//  const square = (num) => {
+//     return num * num;
+//  }
+//  console.log(square(10)); 
+
+
+//  let numbers = [1,2,3,4,5];
+//  let squares = numbers.map((num) => {
+//   return num * num;
+//  });
+//  console.log(squares);
+
+const numbers = [2, 4, 6];
+
+const result = numbers.map((num) => {
+   return num * 2;
+});
+ console.log(result); 
